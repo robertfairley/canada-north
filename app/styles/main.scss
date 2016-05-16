@@ -1,5 +1,21 @@
-// bower:scss
-// endbower
+/* CNG STYLES     */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300|Source+Sans+Pro:400,200,200italic,600,600italic);
+
+@import 'default/colors';
+@import 'default/fonts';
+@import 'default/animation';
+
+@import 'default/page-layout';
+@import 'default/title';
+@import 'default/content-dialog';
+@import 'default/mountains';
+@import 'default/moon';
+@import 'default/menu';
+
+
+// Lead Styles
+* {}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -9,81 +25,49 @@
 }
 
 body {
+  background-color: $BodyWhite;
+  color: $BodyBlack;
+
+  font-family: $SourceSansPro;
+  font-size: 0.9em;
+
+  overflow: hidden;
+}
+
+a {
+  color: $cngBlue;
+}
+a:active {
+  color: lighten($cngBlue, 10%);
+}
+
+///////////////////////////////////////// SCENES //////////
+.scene {
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.scene-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5%;
 }
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+#scene {
+  margin-left: -30vw;
 }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+#scene1 {
+  margin-top: 100vh;
+  margin-left: -30vw;
+  position: relative;
 }
-
-.container-narrow > hr {
-  margin: 30px 0;
+#scene2 {
+  margin-top: 100vh;
+  margin-left: -20vw;
+  position: relative;
 }
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+#scene3 {
+  margin-top: 100vh;
+  margin-left: -20vw;
+  position: relative;
 }

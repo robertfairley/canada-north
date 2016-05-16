@@ -1,0 +1,23 @@
+////////////////////////////////// MOON /////////////
+
+.moon {
+  width: 250px;
+  height: 250px;
+
+  background: $cngYellow;
+
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+
+  z-index: 2;
+  position: fixed;
+
+  &.top {
+    left: 300px;
+    top: 5em;
+  }
+  &.bottom {
+    left: 70vw;
+    bottom: -60px;
+  }
+}

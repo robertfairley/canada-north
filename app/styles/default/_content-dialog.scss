@@ -1,0 +1,75 @@
+///////////////////////////////////////// CONTENT DIALOG ///////////////
+
+.container { z-index: 50; }
+
+.dialog {
+  display: inline-block;
+  left: 15vw;
+  top: 30vh;
+  position: fixed;
+  width: 70%;
+  height: auto;
+
+  padding: 1.5em 1.5em 1.5em 1.5em;
+
+  border-radius: 0.25em;
+
+  background: url("../images/_nse.png") repeat;
+
+  text-align: center;
+  font-family: $RobotoSlab;
+  font-weight: 100;
+  color: $BodyBlack;
+  font-size: 1.25em;
+
+  transition: transform 400ms ease-in-out;
+
+  &.open {
+    transform: rotateY(0) scale(0.999);
+    -webkit-transform: rotateY(0deg) scale(0.999);
+    -moz-transform: rotateY(0) scale(0.999);
+    -ms-transform: rotateY(0) scale(0.999);
+    -o-transform: rotateY(0) scale(0.999);
+    -khtml-transform: rotateY(0) scale(0.999);
+  }
+  &.close {
+    transform: rotateY(90deg) scale(0.999);
+    -webkit-transform: rotateY(90deg) scale(0.999);
+    -moz-transform: rotateY(90deg) scale(0.999);
+    -ms-transform: rotateY(90deg) scale(0.999);
+    -o-transform: rotateY(90deg) scale(0.999);
+    -khtml-transform: rotateY(90deg) scale(0.999);
+  }
+}
+
+
+
+.button {
+  display: inline-block;
+  background-color: $ButtonRed;
+  color: $BodyWhite;
+  text-decoration: none;
+  border-radius: 0.15em;
+
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  -o-user-drag: none;
+
+  font-family: $RobotoSlab;
+  font-weight: 100;
+  font-size: 1.2em;
+
+  padding: 1em 1.125em 1em 1.125em;
+
+  transition: all 200ms linear;
+
+  &:hover {
+    background-color: lighten($ButtonRed, 10%);
+  }
+  &:active {
+    background-color: darken($ButtonRed, 8%);
+    color: darken($BodyWhite, 5%);
+  }
+
+}

@@ -1,0 +1,36 @@
+////////////////////////////////// PAGE LAYOUT /////////////
+
+header {
+  position: fixed;
+  top: 28vh;
+}
+
+.container {
+  position: fixed;
+  top: 30vh;
+}
+
+footer {
+  position: fixed;
+  left: 2em;
+  bottom: 1em;
+
+  opacity: 0.3;
+
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    opacity: 1.0;
+  }
+
+}
+
+hr {
+  border-bottom: 1px solid $BodyBlack;
+
+  &.ab-rule {
+    border-bottom-color: lighten($cngBlue, 20%);
+    margin-right: 30%;
+    margin-left: 30%
+  }
+}

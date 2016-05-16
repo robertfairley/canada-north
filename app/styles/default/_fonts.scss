@@ -1,0 +1,30 @@
+/* fonts     */
+
+
+// Variables
+
+$SourceSansPro:           'Source Sans Pro', sans-serif;
+$RobotoSlab:              'Roboto Slab', serif;
+
+
+.source-sans-pro {
+  font-family: $SourceSansPro;
+}
+.roboto-slab {
+  font-family: $RobotoSlab;
+}
+
+//Helpers
+
+.thinnest {
+  font-weight: 100;
+}
+.thinner {
+  font-weight: 200;
+}
+.thin {
+  font-weight: 300;
+}
+.bold {
+  font-weight: 500;
+}

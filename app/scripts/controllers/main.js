@@ -8,10 +8,5 @@
  * Controller of the cng2016App
  */
 angular.module('cng2016App')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl'
+  );

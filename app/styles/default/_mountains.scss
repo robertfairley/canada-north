@@ -1,0 +1,64 @@
+////////////////////////////////// MOUNTAINS /////////////
+
+.mountain1 {
+  width: 0;
+  height: 0;
+  border-left: 38vh solid transparent;
+  border-right: 38vh solid transparent;
+  border-bottom: 50vh solid $cngBlue;
+
+  z-index: 9;
+
+  position: fixed;
+  left: 20vw;
+  bottom: 0;
+
+  &.shadow {
+    border-bottom-color: $ShadowBlack;
+
+    z-index: 8;
+    left: calc(20vw + 60px);
+  }
+}
+
+.mountain2 {
+  width: 0;
+  height: 0;
+  border-left: 55vh solid transparent;
+  border-right: 55vh solid transparent;
+  border-bottom: 75vh solid $cngMdBlue;
+
+  z-index: 6;
+
+  position: fixed;
+  left: 30vw;
+  bottom: 0;
+
+  &.shadow {
+    border-bottom-color: $ShadowBlack;
+
+    z-index: 5;
+    left: calc(30vw + 60px);
+  }
+}
+
+.mountain3 {
+  width: 0;
+  height: 0;
+  border-left: 50vh solid transparent;
+  border-right: 50vh solid transparent;
+  border-bottom: 60vh solid $cngLtBlue;
+
+  z-index: 3;
+
+  position: fixed;
+  left: 60vw;
+  bottom: 0;
+
+  &.shadow {
+    border-bottom-color: $ShadowBlack;
+
+    z-index: 2;
+    left: calc(60vw + 60px);
+  }
+}

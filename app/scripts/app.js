@@ -4,7 +4,7 @@
  * @ngdoc overview
  * @name cng2016App
  * @description
- * # cng2016App
+ * # Simple one page app promoting a type design project.
  *
  * Main module of the application.
  */
@@ -29,7 +29,13 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/download', {
+        templateUrl: 'views/download.html',
+        controller: 'DownloadCtrl',
+        controllerAs: 'download'
+      })
       .otherwise({
         redirectTo: '/'
       });
+
   });

@@ -1,0 +1,44 @@
+//////////////////////////////////////////////// MENU ///////////////
+
+header {
+  position: fixed;
+  left: 0;
+  top: 235px;
+  width: 110px;
+
+  z-index: 200;
+}
+
+nav {
+
+
+
+  a {
+    display: block;
+    padding: 1em 1.1em 1em 2em;
+    margin-bottom: 0.5em;
+    background-color: $cngBlue;
+    color: $BodyWhite;
+    transform: scale(0.999);
+    text-decoration: none;
+
+    font-family: $RobotoSlab;
+    font-weight: 100;
+    font-size: 1.1em;
+    -webkit-font-smoothing: antialias;
+
+    width: 80%;
+    transition: width 500ms ease-in-out,
+                background-color 300ms ease-in-out,
+                color 300ms ease-in-out;
+
+    &:hover {
+      width: 100%;
+    }
+    &:active {
+      background-color: $BodyBlack;
+      color: $cngLtBlue;
+    }
+  }
+
+}

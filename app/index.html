@@ -1,76 +1,20 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="cng2016App">
-    <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-
-            <a class="navbar-brand" href="#/">cng2016</a>
-          </div>
-
-          <div class="collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
-
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
-</body>
-</html>
+<!--
+/*///////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/// /// ///                                   /// /// ///
+/// /// ///     NORD DU                       /// /// ///
+/// /// ///           C A N A D A             /// /// ///
+/// /// ///           C A N A D A             /// /// ///
+/// /// ///           C A N A D A             /// /// ///
+/// /// ///                    NORTH          /// /// ///
+/// /// ///        *        *       *         /// /// ///
+/// /// ///                                   /// /// ///
+/// /// ///       (C) 2016 SOON DIGITAL       /// /// ///
+/// /// ///           AND ROBERT FAIRLEY      /// /// ///
+/// /// ///                                   /// /// ///
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////*/
+-->
+<!doctype html><html><head> <meta charset="utf-8"> <title>nord du Canada north</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width, initial-scale=0.55"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="mobile-web-app-capable" content="yes"><link rel="shortcut icon" href="/favicon.ico" /> <script src="bower_components/jquery/dist/jquery.min.js"></script> <link rel="stylesheet" href="styles/main.css"></head><body ng-app="cng2016App"><!--[if lte IE 8]> <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--> <img src="images/_cng-title.png" class="title full"/> <header> <nav> <a href="#/" id="1">HOME</a> <a href="#/about" id="2">ABOUT</a> <a href="#/download" id="3">DOWNLOAD</a> </nav> </header> <div class="container"> <div ng-view=""></div></div><div class="scene-container"> <ul id="scene" class="scene"> <li class="layer" data-depth="0.40"> <div class="moon top"></div></li></ul> <ul id="scene1" class="scene"> <li class="layer" data-depth="0.80"> <div class="mountain3"></div><div class="mountain3 shadow"></div></li></ul> <ul id="scene2" class="scene"> <li class="layer" data-depth="0.50"> <div class="mountain2"></div><div class="mountain2 shadow"></div></li></ul> <ul id="scene3" class="scene"> <li class="layer" data-depth="0.20"> <div class="mountain1"></div><div class="mountain1 shadow"></div></li></div></div><footer> <p>&copy; 2016</p></footer> <script>! function(A, n, g, u, l, a, r){A.GoogleAnalyticsObject=l, A[l]=A[l] || function(){(A[l].q=A[l].q || []).push(arguments)}, A[l].l=+new Date, a=n.createElement(g), r=n.getElementsByTagName(g)[0], a.src=u, r.parentNode.insertBefore(a, r)}(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-67853713-1'); ga('send', 'pageview'); </script> <script src="bower_components/angular/angular.js"></script> <script src="bower_components/angular-animate/angular-animate.js"></script> <script src="bower_components/angular-cookies/angular-cookies.js"></script> <script src="bower_components/angular-resource/angular-resource.js"></script> <script src="bower_components/angular-route/angular-route.js"></script> <script src="bower_components/angular-sanitize/angular-sanitize.js"></script> <script src="bower_components/angular-touch/angular-touch.js"></script> <script src="scripts/app.js"></script> <script src="scripts/controllers/main.js"></script> <script src="scripts/controllers/about.js"></script> <script src="scripts/controllers/download.js"></script> <script src="scripts/jquery.parallax.min.js"></script> <script>$(document).ready(function(){$("#scene").parallax({calibrateX: true, calibrateY: true, invertX: false, invertY: true, limitX: false, limitY: 20, scalarX: 12, scalarY: 20, frictionX: 0.1, frictionY: 0.1, originX: 1.0, originY: 1.0}); $("#scene1").parallax(); $("#scene2").parallax(); $("#scene3").parallax();}); </script></body></html>
